@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0" />
+  <link href="./index.css" rel="stylesheet" />
+  <title>Whack A Mole</title>
+</head>
+
+<body>
+  <h1>Whack A Mole</h1>
+  <div class="buttons-wrapper">
+    <button class="start-button" onclick="startGame()">Start</button><button onclick="pauseGame()">Pause</button> <button
+      onclick="continueGame()">Play</button>
+  </div>
+  <div class="score hidden"></div>
+  <div class="best-score hidden"></div>
+  <div class="game-wrapper">
+  </div>
+  <template id="game-tile">
+    <div class="tile">
+      <div class="mole">
+        <img class="hidden" src="/public/assets/monty-mole.png" />
+      </div>
+      <div class="plant">
+        <img class="hidden" src="/public/assets/piranha-plant.png" />
+      </div>
+    </div>
+  </template>
+  <script src="./index.js"></script>
+</body>
+
+</html>
